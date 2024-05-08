@@ -1,0 +1,12 @@
+C:\Users\valer\source\repos\PharmacyManagementProject\bin\Debug\PharmacyManagementProject.exe.config
+C:\Users\valer\source\repos\PharmacyManagementProject\bin\Debug\PharmacyManagementProject.exe
+C:\Users\valer\source\repos\PharmacyManagementProject\bin\Debug\PharmacyManagementProject.pdb
+C:\Users\valer\source\repos\PharmacyManagementProject\obj\Debug\PharmacyManagementProject.csproj.AssemblyReference.cache
+C:\Users\valer\source\repos\PharmacyManagementProject\obj\Debug\PharmacyManagementProject.Form1.resources
+C:\Users\valer\source\repos\PharmacyManagementProject\obj\Debug\PharmacyManagementProject.Properties.Resources.resources
+C:\Users\valer\source\repos\PharmacyManagementProject\obj\Debug\PharmacyManagementProject.csproj.GenerateResource.cache
+C:\Users\valer\source\repos\PharmacyManagementProject\obj\Debug\PharmacyManagementProject.csproj.CoreCompileInputs.cache
+C:\Users\valer\source\repos\PharmacyManagementProject\obj\Debug\PharmacyManagementProject.exe
+C:\Users\valer\source\repos\PharmacyManagementProject\obj\Debug\PharmacyManagementProject.pdb
+C:\Users\valer\source\repos\PharmacyManagementProject\bin\Debug\Guna.UI2.dll
+C:\Users\valer\source\repos\PharmacyManagementProject\obj\Debug\Pharmacy.BD036CF0.Up2Date
