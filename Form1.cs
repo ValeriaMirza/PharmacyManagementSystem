@@ -27,9 +27,9 @@ namespace PharmacyManagementProject
 
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -45,6 +45,38 @@ namespace PharmacyManagementProject
         private void guna2TextBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSignIn_Click(object sender, EventArgs e)
+        {
+           if(txtUsername.Text=="admin" && txtPassword.Text=="admin123")
+            {
+                Administrator am = new Administrator();
+                am.Show();
+                this.Hide();
+            }
+           else
+            {
+                MessageBox.Show("Wrong Username or Password", "Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+              
+            }
+        }
+
+        private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            txtUsername.Clear();
+
+            txtPassword.Clear();
         }
     }
 }
