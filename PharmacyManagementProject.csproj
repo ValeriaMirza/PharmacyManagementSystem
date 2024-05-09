@@ -65,6 +65,18 @@
     <Compile Include="Administrator UC\UC_Dashboard.Designer.cs">
       <DependentUpon>UC_Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Administrator UC\UC_Profile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Administrator UC\UC_Profile.Designer.cs">
+      <DependentUpon>UC_Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator UC\UC_ViewUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Administrator UC\UC_ViewUser.Designer.cs">
+      <DependentUpon>UC_ViewUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Administrator.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +103,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Administrator UC\UC_Dashboard.resx">
       <DependentUpon>UC_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator UC\UC_Profile.resx">
+      <DependentUpon>UC_Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator UC\UC_ViewUser.resx">
+      <DependentUpon>UC_ViewUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Administrator.resx">
       <DependentUpon>Administrator.cs</DependentUpon>

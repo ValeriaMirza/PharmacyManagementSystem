@@ -13,3 +13,5 @@ C:\Users\valer\source\repos\PharmacyManagementProject\obj\Debug\Pharmacy.BD036CF
 C:\Users\valer\source\repos\PharmacyManagementProject\obj\Debug\PharmacyManagementProject.Administrator.resources
 C:\Users\valer\source\repos\PharmacyManagementProject\obj\Debug\PharmacyManagementProject.Administrator_UC.UC_Dashboard.resources
 C:\Users\valer\source\repos\PharmacyManagementProject\obj\Debug\PharmacyManagementProject.Administrator_UC.UC_AddUser.resources
+C:\Users\valer\source\repos\PharmacyManagementProject\obj\Debug\PharmacyManagementProject.Administrator_UC.UC_ViewUser.resources
+C:\Users\valer\source\repos\PharmacyManagementProject\obj\Debug\PharmacyManagementProject.Administrator_UC.UC_Profile.resources

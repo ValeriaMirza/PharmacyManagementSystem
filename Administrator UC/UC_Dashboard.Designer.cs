@@ -238,8 +238,8 @@
             this.Controls.Add(this.btnSync);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.label1);
             this.Name = "UC_Dashboard";
             this.Size = new System.Drawing.Size(1109, 768);
             this.Load += new System.EventHandler(this.UC_Dashboard_Load);

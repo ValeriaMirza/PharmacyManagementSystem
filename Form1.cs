@@ -78,7 +78,7 @@ namespace PharmacyManagementProject
                     String role = ds.Tables[0].Rows[0][1].ToString();
                     if (role == "Administrator")
                     {
-                        Administrator admin = new Administrator();
+                        Administrator admin = new Administrator(txtUsername.Text);
                         admin.Show();
                         this.Hide();
                     }
