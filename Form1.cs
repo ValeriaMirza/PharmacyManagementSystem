@@ -12,6 +12,9 @@ namespace PharmacyManagementProject
 {
     public partial class Form1 : Form
     {
+        function fn = new function();
+        string query;
+        DataSet ds;
         public Form1()
         {
             InitializeComponent();
@@ -54,17 +57,58 @@ namespace PharmacyManagementProject
 
         private void btnSignIn_Click(object sender, EventArgs e)
         {
-           if(txtUsername.Text=="1" && txtPassword.Text=="1")
+            query = "select * from users";
+            ds = fn.getData(query);
+
+            if (ds.Tables[0].Rows.Count == 0)
             {
-                Administrator am = new Administrator();
-                am.Show();
-                this.Hide();
+                if (txtUsername.Text == "root" && txtPassword.Text == "root")
+                {
+                    Administrator admin = new Administrator();
+                    admin.Show();
+                    this.Hide();
+                }
             }
-           else
+            else
             {
-                MessageBox.Show("Wrong Username or Password", "Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
-              
+                query = "select * from users where username ='" + txtUsername.Text + "' and pass = '" + txtPassword.Text + "'";
+                ds = fn.getData(query);
+                if (ds.Tables[0].Rows.Count != 0)
+                {
+                    String role = ds.Tables[0].Rows[0][1].ToString();
+                    if (role == "Administrator")
+                    {
+                        Administrator admin = new Administrator();
+                        admin.Show();
+                        this.Hide();
+                    }
+                    else if (role == "Pharmacist")
+                    {
+                        Pharmacist pharm = new Pharmacist();
+                        pharm.Show();
+                        this.Hide();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Wromg Username or Password!","Error", MessageBoxButtons.OK,MessageBoxIcon.Error);
+                }
+
             }
+
+
+
+            //if (txtUsername.Text == "1" && txtPassword.Text == "1")
+            //{
+            //    Administrator am = new Administrator();
+            //    am.Show();
+            //    this.Hide();
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Wrong Username or Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            //}
         }
 
         private void txtPassword_TextChanged(object sender, EventArgs e)
