@@ -10,3 +10,4 @@ C:\Users\valer\source\repos\PharmacyManagementProject\obj\Debug\PharmacyManageme
 C:\Users\valer\source\repos\PharmacyManagementProject\obj\Debug\PharmacyManagementProject.pdb
 C:\Users\valer\source\repos\PharmacyManagementProject\bin\Debug\Guna.UI2.dll
 C:\Users\valer\source\repos\PharmacyManagementProject\obj\Debug\Pharmacy.BD036CF0.Up2Date
+C:\Users\valer\source\repos\PharmacyManagementProject\obj\Debug\PharmacyManagementProject.Administrator.resources

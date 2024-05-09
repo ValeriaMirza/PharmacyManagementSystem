@@ -54,7 +54,7 @@ namespace PharmacyManagementProject
 
         private void btnSignIn_Click(object sender, EventArgs e)
         {
-           if(txtUsername.Text=="admin" && txtPassword.Text=="admin123")
+           if(txtUsername.Text=="1" && txtPassword.Text=="1")
             {
                 Administrator am = new Administrator();
                 am.Show();
