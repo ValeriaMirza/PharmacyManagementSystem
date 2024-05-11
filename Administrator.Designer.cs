@@ -41,13 +41,13 @@
             this.Label1 = new System.Windows.Forms.Label();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
+            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.uC_Profile1 = new PharmacyManagementProject.Administrator_UC.UC_Profile();
             this.uC_ViewUser1 = new PharmacyManagementProject.Administrator_UC.UC_ViewUser();
             this.uC_AddUser1 = new PharmacyManagementProject.Administrator_UC.UC_AddUser();
             this.uC_Dashboard1 = new PharmacyManagementProject.Administrator_UC.UC_Dashboard();
-            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -157,7 +157,7 @@
             this.btnAddUser.ForeColor = System.Drawing.Color.White;
             this.btnAddUser.Image = ((System.Drawing.Image)(resources.GetObject("btnAddUser.Image")));
             this.btnAddUser.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAddUser.Location = new System.Drawing.Point(-3, 306);
+            this.btnAddUser.Location = new System.Drawing.Point(0, 306);
             this.btnAddUser.Name = "btnAddUser";
             this.btnAddUser.Size = new System.Drawing.Size(275, 45);
             this.btnAddUser.TabIndex = 4;
@@ -188,7 +188,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(54, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(74, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(150, 147);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -200,12 +200,11 @@
             this.Label1.AutoSize = true;
             this.Label1.Font = new System.Drawing.Font("Impact", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label1.ForeColor = System.Drawing.Color.White;
-            this.Label1.Location = new System.Drawing.Point(48, 172);
+            this.Label1.Location = new System.Drawing.Point(53, 172);
             this.Label1.Name = "Label1";
             this.Label1.Size = new System.Drawing.Size(187, 35);
             this.Label1.TabIndex = 2;
             this.Label1.Text = "Administrator";
-            this.Label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // guna2Elipse1
             // 
@@ -222,6 +221,18 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1109, 768);
             this.panel2.TabIndex = 1;
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.TargetControl = this.panel2;
+            // 
+            // guna2Elipse3
+            // 
+            this.guna2Elipse3.TargetControl = this.panel2;
+            // 
+            // guna2Elipse4
+            // 
+            this.guna2Elipse4.TargetControl = this.panel2;
             // 
             // uC_Profile1
             // 
@@ -258,18 +269,6 @@
             this.uC_Dashboard1.Name = "uC_Dashboard1";
             this.uC_Dashboard1.Size = new System.Drawing.Size(1109, 768);
             this.uC_Dashboard1.TabIndex = 8;
-            // 
-            // guna2Elipse2
-            // 
-            this.guna2Elipse2.TargetControl = this.panel2;
-            // 
-            // guna2Elipse3
-            // 
-            this.guna2Elipse3.TargetControl = this.panel2;
-            // 
-            // guna2Elipse4
-            // 
-            this.guna2Elipse4.TargetControl = this.panel2;
             // 
             // Administrator
             // 

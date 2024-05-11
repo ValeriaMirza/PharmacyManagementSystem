@@ -19,16 +19,6 @@ namespace PharmacyManagementProject.Administrator_UC
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2TextBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnSignUp_Click(object sender, EventArgs e)
         {
             String role = txtUserRole.Text;
@@ -64,11 +54,6 @@ namespace PharmacyManagementProject.Administrator_UC
             txtUsername.Clear();
             txtPassword.Clear();
 
-        }
-
-        private void txtUsername_TextChanged(object sender, EventArgs e)
-        {
-            
         }
     }
 }

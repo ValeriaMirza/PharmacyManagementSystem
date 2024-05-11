@@ -3,7 +3,43 @@
   "WorkspaceRootPath": "C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{70ECE138-D133-4C7F-937D-3E0B2C40B0FE}|PharmacyManagementProject.csproj|c:\\users\\valer\\source\\repos\\pharmacymanagementproject\\administrator uc\\uc_profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{70ECE138-D133-4C7F-937D-3E0B2C40B0FE}|PharmacyManagementProject.csproj|c:\\users\\valer\\source\\repos\\pharmacymanagementproject\\pharmacist uc\\uc_p_sellmedicine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70ECE138-D133-4C7F-937D-3E0B2C40B0FE}|PharmacyManagementProject.csproj|solutionrelative:pharmacist uc\\uc_p_sellmedicine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70ECE138-D133-4C7F-937D-3E0B2C40B0FE}|PharmacyManagementProject.csproj|c:\\users\\valer\\source\\repos\\pharmacymanagementproject\\pharmacist uc\\uc_p_sellmedicine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{70ECE138-D133-4C7F-937D-3E0B2C40B0FE}|PharmacyManagementProject.csproj|solutionrelative:pharmacist uc\\uc_p_sellmedicine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70ECE138-D133-4C7F-937D-3E0B2C40B0FE}|PharmacyManagementProject.csproj|C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\function.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70ECE138-D133-4C7F-937D-3E0B2C40B0FE}|PharmacyManagementProject.csproj|solutionrelative:function.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70ECE138-D133-4C7F-937D-3E0B2C40B0FE}|PharmacyManagementProject.csproj|c:\\users\\valer\\source\\repos\\pharmacymanagementproject\\pharmacist uc\\uc_p_updatemedicine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70ECE138-D133-4C7F-937D-3E0B2C40B0FE}|PharmacyManagementProject.csproj|solutionrelative:pharmacist uc\\uc_p_updatemedicine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70ECE138-D133-4C7F-937D-3E0B2C40B0FE}|PharmacyManagementProject.csproj|c:\\users\\valer\\source\\repos\\pharmacymanagementproject\\pharmacist uc\\uc_p_addmedicine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70ECE138-D133-4C7F-937D-3E0B2C40B0FE}|PharmacyManagementProject.csproj|solutionrelative:pharmacist uc\\uc_p_addmedicine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70ECE138-D133-4C7F-937D-3E0B2C40B0FE}|PharmacyManagementProject.csproj|c:\\users\\valer\\source\\repos\\pharmacymanagementproject\\pharmacist uc\\uc_p_viewmedicine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70ECE138-D133-4C7F-937D-3E0B2C40B0FE}|PharmacyManagementProject.csproj|solutionrelative:pharmacist uc\\uc_p_viewmedicine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70ECE138-D133-4C7F-937D-3E0B2C40B0FE}|PharmacyManagementProject.csproj|C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\administrator uc\\uc_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70ECE138-D133-4C7F-937D-3E0B2C40B0FE}|PharmacyManagementProject.csproj|solutionrelative:administrator uc\\uc_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70ECE138-D133-4C7F-937D-3E0B2C40B0FE}|PharmacyManagementProject.csproj|C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\administrator uc\\uc_viewuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{70ECE138-D133-4C7F-937D-3E0B2C40B0FE}|PharmacyManagementProject.csproj|solutionrelative:administrator uc\\uc_viewuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70ECE138-D133-4C7F-937D-3E0B2C40B0FE}|PharmacyManagementProject.csproj|C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\administrator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70ECE138-D133-4C7F-937D-3E0B2C40B0FE}|PharmacyManagementProject.csproj|solutionrelative:administrator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70ECE138-D133-4C7F-937D-3E0B2C40B0FE}|PharmacyManagementProject.csproj|C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\administrator uc\\uc_profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70ECE138-D133-4C7F-937D-3E0B2C40B0FE}|PharmacyManagementProject.csproj|solutionrelative:administrator uc\\uc_profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,20 +47,16 @@
       "RelativeMoniker": "D:0:0:{70ECE138-D133-4C7F-937D-3E0B2C40B0FE}|PharmacyManagementProject.csproj|solutionrelative:administrator uc\\uc_profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70ECE138-D133-4C7F-937D-3E0B2C40B0FE}|PharmacyManagementProject.csproj|C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\administrator uc\\uc_adduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70ECE138-D133-4C7F-937D-3E0B2C40B0FE}|PharmacyManagementProject.csproj|solutionrelative:administrator uc\\uc_adduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{70ECE138-D133-4C7F-937D-3E0B2C40B0FE}|PharmacyManagementProject.csproj|C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\administrator uc\\uc_adduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{70ECE138-D133-4C7F-937D-3E0B2C40B0FE}|PharmacyManagementProject.csproj|solutionrelative:administrator uc\\uc_adduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70ECE138-D133-4C7F-937D-3E0B2C40B0FE}|PharmacyManagementProject.csproj|C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\pharmacist.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70ECE138-D133-4C7F-937D-3E0B2C40B0FE}|PharmacyManagementProject.csproj|solutionrelative:pharmacist.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{70ECE138-D133-4C7F-937D-3E0B2C40B0FE}|PharmacyManagementProject.csproj|C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\administrator.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70ECE138-D133-4C7F-937D-3E0B2C40B0FE}|PharmacyManagementProject.csproj|solutionrelative:administrator.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70ECE138-D133-4C7F-937D-3E0B2C40B0FE}|PharmacyManagementProject.csproj|C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70ECE138-D133-4C7F-937D-3E0B2C40B0FE}|PharmacyManagementProject.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70ECE138-D133-4C7F-937D-3E0B2C40B0FE}|PharmacyManagementProject.csproj|C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\function.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70ECE138-D133-4C7F-937D-3E0B2C40B0FE}|PharmacyManagementProject.csproj|solutionrelative:function.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,78 +71,173 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UC_Profile.cs",
-              "DocumentMoniker": "C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\Administrator UC\\UC_Profile.cs",
-              "RelativeDocumentMoniker": "Administrator UC\\UC_Profile.cs",
-              "ToolTip": "C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\Administrator UC\\UC_Profile.cs",
-              "RelativeToolTip": "Administrator UC\\UC_Profile.cs",
-              "ViewState": "AQIAAEAAAAAAAAAAAAA2wEsAAAAzAAAA",
+              "Title": "UC_P_SellMedicine.cs",
+              "DocumentMoniker": "C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\Pharmacist UC\\UC_P_SellMedicine.cs",
+              "RelativeDocumentMoniker": "Pharmacist UC\\UC_P_SellMedicine.cs",
+              "ToolTip": "C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\Pharmacist UC\\UC_P_SellMedicine.cs",
+              "RelativeToolTip": "Pharmacist UC\\UC_P_SellMedicine.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAADgvzsAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T21:07:38.643Z",
+              "WhenOpened": "2024-05-10T18:22:53.23Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "UC_P_SellMedicine.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\Pharmacist UC\\UC_P_SellMedicine.cs",
+              "RelativeDocumentMoniker": "Pharmacist UC\\UC_P_SellMedicine.cs",
+              "ToolTip": "C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\Pharmacist UC\\UC_P_SellMedicine.cs [Design]",
+              "RelativeToolTip": "Pharmacist UC\\UC_P_SellMedicine.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T19:26:23.04Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "function.cs",
+              "DocumentMoniker": "C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\function.cs",
+              "RelativeDocumentMoniker": "function.cs",
+              "ToolTip": "C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\function.cs",
+              "RelativeToolTip": "function.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAgwBwAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T14:09:09.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UC_P_UpdateMedicine.cs",
+              "DocumentMoniker": "C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\Pharmacist UC\\UC_P_UpdateMedicine.cs",
+              "RelativeDocumentMoniker": "Pharmacist UC\\UC_P_UpdateMedicine.cs",
+              "ToolTip": "C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\Pharmacist UC\\UC_P_UpdateMedicine.cs",
+              "RelativeToolTip": "Pharmacist UC\\UC_P_UpdateMedicine.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAUwFQAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T15:46:49.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UC_P_AddMedicine.cs",
+              "DocumentMoniker": "C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\Pharmacist UC\\UC_P_AddMedicine.cs",
+              "RelativeDocumentMoniker": "Pharmacist UC\\UC_P_AddMedicine.cs",
+              "ToolTip": "C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\Pharmacist UC\\UC_P_AddMedicine.cs",
+              "RelativeToolTip": "Pharmacist UC\\UC_P_AddMedicine.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAWwCEAAADQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T16:27:31.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UC_P_ViewMedicine.cs",
+              "DocumentMoniker": "C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\Pharmacist UC\\UC_P_ViewMedicine.cs",
+              "RelativeDocumentMoniker": "Pharmacist UC\\UC_P_ViewMedicine.cs",
+              "ToolTip": "C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\Pharmacist UC\\UC_P_ViewMedicine.cs",
+              "RelativeToolTip": "Pharmacist UC\\UC_P_ViewMedicine.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAIwEEAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T14:44:56.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UC_ViewUser.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\Administrator UC\\UC_ViewUser.cs",
+              "RelativeDocumentMoniker": "Administrator UC\\UC_ViewUser.cs",
+              "ToolTip": "C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\Administrator UC\\UC_ViewUser.cs [Design]",
+              "RelativeToolTip": "Administrator UC\\UC_ViewUser.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T12:05:11.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Administrator.cs",
+              "DocumentMoniker": "C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\Administrator.cs",
+              "RelativeDocumentMoniker": "Administrator.cs",
+              "ToolTip": "C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\Administrator.cs",
+              "RelativeToolTip": "Administrator.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAowCIAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T12:45:43.063Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UC_Profile.cs",
+              "DocumentMoniker": "C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\Administrator UC\\UC_Profile.cs",
+              "RelativeDocumentMoniker": "Administrator UC\\UC_Profile.cs",
+              "ToolTip": "C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\Administrator UC\\UC_Profile.cs",
+              "RelativeToolTip": "Administrator UC\\UC_Profile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T21:07:38.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UC_Dashboard.cs",
+              "DocumentMoniker": "C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\Administrator UC\\UC_Dashboard.cs",
+              "RelativeDocumentMoniker": "Administrator UC\\UC_Dashboard.cs",
+              "ToolTip": "C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\Administrator UC\\UC_Dashboard.cs",
+              "RelativeToolTip": "Administrator UC\\UC_Dashboard.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAYwC0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T12:56:16.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "UC_Profile.cs [Design]",
               "DocumentMoniker": "C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\Administrator UC\\UC_Profile.cs",
               "RelativeDocumentMoniker": "Administrator UC\\UC_Profile.cs",
               "ToolTip": "C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\Administrator UC\\UC_Profile.cs [Design]",
               "RelativeToolTip": "Administrator UC\\UC_Profile.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T20:51:39.825Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-09T20:51:39.825Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 11,
+              "Title": "UC_AddUser.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\Administrator UC\\UC_AddUser.cs",
+              "RelativeDocumentMoniker": "Administrator UC\\UC_AddUser.cs",
+              "ToolTip": "C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\Administrator UC\\UC_AddUser.cs [Design]",
+              "RelativeToolTip": "Administrator UC\\UC_AddUser.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T12:08:19.621Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Pharmacist.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\Pharmacist.Designer.cs",
+              "RelativeDocumentMoniker": "Pharmacist.Designer.cs",
+              "ToolTip": "C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\Pharmacist.Designer.cs",
+              "RelativeToolTip": "Pharmacist.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T12:30:57.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Administrator.Designer.cs",
               "DocumentMoniker": "C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\Administrator.Designer.cs",
               "RelativeDocumentMoniker": "Administrator.Designer.cs",
               "ToolTip": "C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\Administrator.Designer.cs",
               "RelativeToolTip": "Administrator.Designer.cs",
-              "ViewState": "AQIAAG0AAAAAAAAAAAAtwHoAAABMAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T21:25:52.835Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAAE0AAAAAAAAAAAAtwF0AAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T17:55:43.223Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UC_AddUser.cs",
-              "DocumentMoniker": "C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\Administrator UC\\UC_AddUser.cs",
-              "RelativeDocumentMoniker": "Administrator UC\\UC_AddUser.cs",
-              "ToolTip": "C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\Administrator UC\\UC_AddUser.cs",
-              "RelativeToolTip": "Administrator UC\\UC_AddUser.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAywCsAAABoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T14:00:29.562Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "function.cs",
-              "DocumentMoniker": "C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\function.cs",
-              "RelativeDocumentMoniker": "function.cs",
-              "ToolTip": "C:\\Users\\valer\\source\\repos\\PharmacyManagementProject\\function.cs",
-              "RelativeToolTip": "function.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAD4vxwAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T14:09:09.441Z"
+              "WhenOpened": "2024-05-09T21:25:52.835Z"
             }
           ]
         }

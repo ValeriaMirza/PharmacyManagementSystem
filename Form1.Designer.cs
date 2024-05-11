@@ -68,7 +68,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label1
             // 
@@ -81,7 +80,6 @@
             this.label1.Size = new System.Drawing.Size(354, 225);
             this.label1.TabIndex = 0;
             this.label1.Text = "Pharmacy \r\nManagement\r\nSystem";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel2
             // 
@@ -102,7 +100,6 @@
             this.label2.Size = new System.Drawing.Size(94, 35);
             this.label2.TabIndex = 5;
             this.label2.Text = "Sign In";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // pictureBox2
             // 
@@ -137,7 +134,6 @@
             this.label4.Size = new System.Drawing.Size(90, 25);
             this.label4.TabIndex = 7;
             this.label4.Text = "Password";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // txtUsername
             // 
@@ -161,7 +157,6 @@
             this.txtUsername.SelectedText = "";
             this.txtUsername.Size = new System.Drawing.Size(383, 44);
             this.txtUsername.TabIndex = 8;
-            this.txtUsername.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
             // txtPassword
             // 
@@ -184,7 +179,6 @@
             this.txtPassword.SelectedText = "";
             this.txtPassword.Size = new System.Drawing.Size(383, 44);
             this.txtPassword.TabIndex = 9;
-            this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
             // btnSignIn
             // 
@@ -250,7 +244,6 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

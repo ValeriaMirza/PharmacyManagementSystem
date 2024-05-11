@@ -15,3 +15,10 @@ C:\Users\valer\source\repos\PharmacyManagementProject\obj\Debug\PharmacyManageme
 C:\Users\valer\source\repos\PharmacyManagementProject\obj\Debug\PharmacyManagementProject.Administrator_UC.UC_AddUser.resources
 C:\Users\valer\source\repos\PharmacyManagementProject\obj\Debug\PharmacyManagementProject.Administrator_UC.UC_ViewUser.resources
 C:\Users\valer\source\repos\PharmacyManagementProject\obj\Debug\PharmacyManagementProject.Administrator_UC.UC_Profile.resources
+C:\Users\valer\source\repos\PharmacyManagementProject\obj\Debug\PharmacyManagementProject.Pharmacist.resources
+C:\Users\valer\source\repos\PharmacyManagementProject\obj\Debug\PharmacyManagementProject.Pharmacist_UC.UC_P_Dashboard.resources
+C:\Users\valer\source\repos\PharmacyManagementProject\obj\Debug\PharmacyManagementProject.Pharmacist_UC.UC_P_AddMedicine.resources
+C:\Users\valer\source\repos\PharmacyManagementProject\obj\Debug\PharmacyManagementProject.Pharmacist_UC.UC_P_ViewMedicine.resources
+C:\Users\valer\source\repos\PharmacyManagementProject\obj\Debug\PharmacyManagementProject.Pharmacist_UC.UC_P_UpdateMedicine.resources
+C:\Users\valer\source\repos\PharmacyManagementProject\obj\Debug\PharmacyManagementProject.Pharmacist_UC.UC_P_MedicineValidityCheck.resources
+C:\Users\valer\source\repos\PharmacyManagementProject\obj\Debug\PharmacyManagementProject.Pharmacist_UC.UC_P_SellMedicine.resources

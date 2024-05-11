@@ -30,11 +30,6 @@ namespace PharmacyManagementProject
             uC_Profile1.ID = ID;
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_Dashboard_Click(object sender, EventArgs e)
         {
             uC_Dashboard1.Visible = true;
@@ -54,10 +49,6 @@ namespace PharmacyManagementProject
             this.Hide();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void Administrator_Load(object sender, EventArgs e)
         {

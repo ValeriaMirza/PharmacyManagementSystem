@@ -58,10 +58,9 @@
             this.label1.Location = new System.Drawing.Point(23, 25);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(149, 42);
+            this.label1.Size = new System.Drawing.Size(145, 41);
             this.label1.TabIndex = 0;
             this.label1.Text = "Add User";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -200,7 +199,6 @@
             this.txtEmail.SelectedText = "";
             this.txtEmail.Size = new System.Drawing.Size(262, 36);
             this.txtEmail.TabIndex = 11;
-            this.txtEmail.TextChanged += new System.EventHandler(this.guna2TextBox2_TextChanged);
             // 
             // txtUsername
             // 
@@ -222,7 +220,6 @@
             this.txtUsername.SelectedText = "";
             this.txtUsername.Size = new System.Drawing.Size(262, 36);
             this.txtUsername.TabIndex = 12;
-            this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
             // 
             // txtPassword
             // 

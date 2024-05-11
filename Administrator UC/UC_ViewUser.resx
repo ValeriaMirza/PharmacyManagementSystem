@@ -1135,7 +1135,7 @@
   <data name="btnSync.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAADiGSURBVHhe7d0J
+        wAAADsABataJCQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAADiGSURBVHhe7d0J
         3G71vP//TbMxSSkSkWQ6GgxHhqKII0VlVsYOHWSqDAeZi58hDurEKWOEY56nIoSOWZmKMpQ0aKbU//96
         7+zc7f3Z+56uYX3Xer0ej+fDw+7e977WutY1ru/6fpeYWedbCxvh9rgXdsHeeA5egf/C+/EJfAlfx4n4
         CU7B73EuLsb/txL57zOdg/zdk5HfdSzyu4/B+3A4Xo/98SQ8FNvhdlgf14KZmZmtpBviDnggnoiX4jB8
@@ -1382,5 +1382,8 @@
   </data>
   <metadata name="guna2Elipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>82</value>
   </metadata>
 </root>

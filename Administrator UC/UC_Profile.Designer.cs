@@ -113,7 +113,6 @@
             this.label5.Size = new System.Drawing.Size(89, 25);
             this.label5.TabIndex = 5;
             this.label5.Text = "User Role";
-            this.label5.Click += new System.EventHandler(this.label3_Click);
             // 
             // label6
             // 
@@ -125,7 +124,6 @@
             this.label6.Size = new System.Drawing.Size(58, 25);
             this.label6.TabIndex = 6;
             this.label6.Text = "Name";
-            this.label6.Click += new System.EventHandler(this.label4_Click);
             // 
             // txtName
             // 
@@ -168,7 +166,6 @@
             this.txtDob.SelectedText = "";
             this.txtDob.Size = new System.Drawing.Size(340, 36);
             this.txtDob.TabIndex = 9;
-            this.txtDob.TextChanged += new System.EventHandler(this.guna2TextBox2_TextChanged);
             // 
             // label7
             // 
@@ -180,7 +177,6 @@
             this.label7.Size = new System.Drawing.Size(112, 25);
             this.label7.TabIndex = 8;
             this.label7.Text = "Date of Birth";
-            this.label7.Click += new System.EventHandler(this.label5_Click);
             // 
             // txtMobile
             // 
@@ -202,7 +198,6 @@
             this.txtMobile.SelectedText = "";
             this.txtMobile.Size = new System.Drawing.Size(340, 36);
             this.txtMobile.TabIndex = 11;
-            this.txtMobile.TextChanged += new System.EventHandler(this.guna2TextBox3_TextChanged);
             // 
             // label8
             // 
@@ -214,7 +209,6 @@
             this.label8.Size = new System.Drawing.Size(129, 25);
             this.label8.TabIndex = 10;
             this.label8.Text = "Phone Number";
-            this.label8.Click += new System.EventHandler(this.label6_Click);
             // 
             // txtEmail
             // 
@@ -279,7 +273,6 @@
             this.lael10.Size = new System.Drawing.Size(90, 25);
             this.lael10.TabIndex = 14;
             this.lael10.Text = "Password";
-            this.lael10.Click += new System.EventHandler(this.label8_Click);
             // 
             // btnUpdate
             // 
@@ -349,8 +342,6 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "UC_Profile";
             this.Size = new System.Drawing.Size(1109, 768);
-            this.Load += new System.EventHandler(this.UC_Profile_Load);
-            this.DoubleClick += new System.EventHandler(this.UC_Profile_DoubleClick);
             this.Enter += new System.EventHandler(this.UC_Profile_Enter);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

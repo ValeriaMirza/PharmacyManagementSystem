@@ -66,7 +66,6 @@
             this.label1.Size = new System.Drawing.Size(175, 41);
             this.label1.TabIndex = 0;
             this.label1.Text = "Dashboard";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel1
             // 
@@ -80,7 +79,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(420, 528);
             this.panel1.TabIndex = 1;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // AdminLabel
             // 
@@ -136,7 +134,6 @@
             this.label2.Size = new System.Drawing.Size(187, 35);
             this.label2.TabIndex = 0;
             this.label2.Text = "Administrator";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // panel2
             // 
@@ -183,7 +180,6 @@
             this.label9.Size = new System.Drawing.Size(218, 54);
             this.label9.TabIndex = 3;
             this.label9.Text = "\r\nTo be continued ...\r\n";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label8
             // 

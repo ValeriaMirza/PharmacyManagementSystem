@@ -25,20 +25,7 @@ namespace PharmacyManagementProject.Administrator_UC
         {
             set { currentUser = value; }
         }
-        private void label1_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void UC_ViewUser_Load(object sender, EventArgs e)
         {

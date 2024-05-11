@@ -19,45 +19,6 @@ namespace PharmacyManagementProject.Administrator_UC
             InitializeComponent();
         }
 
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void UC_Profile_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2TextBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2TextBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
         public string ID
         {
             set { userNameLabel.Text = value; }
@@ -91,10 +52,6 @@ namespace PharmacyManagementProject.Administrator_UC
 
         }
 
-        private void UC_Profile_DoubleClick(object sender, EventArgs e)
-        {
-           
-        }
 
         private void btnReset_Click(object sender, EventArgs e)
         {
