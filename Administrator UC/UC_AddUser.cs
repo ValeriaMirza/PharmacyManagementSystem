@@ -14,10 +14,17 @@ namespace PharmacyManagementProject.Administrator_UC
     {
         Singleton singleton = Singleton.Instance; // Accessing the Singleton instance
         string query;
-
+        //private UserManager userManager = new UserManager();
+        public static event EventHandler UserAdded;
         public UC_AddUser()
         {
             InitializeComponent();
+            UC_ViewUser.UserAdded += UC_ViewUser_UserAdded;
+        }
+        private void UC_ViewUser_UserAdded(object sender, EventArgs e)
+        {
+            // Reload UC_AddUser form
+            ClearAll();
         }
 
         private void btnSignUp_Click(object sender, EventArgs e)
@@ -34,13 +41,18 @@ namespace PharmacyManagementProject.Administrator_UC
             {
                 query = "insert into users (userRole, name, dob, mobile, email, username, pass) values ('" + role + "', '" + name + "','" + dob + "', " + mobile + ",'" + email + "','" + username + "','" + pass + "')";
                 singleton.SetData(query, "Sign Up Successful!"); // Using the Singleton instance
+                ClearAll();
+                OnUserAdded(EventArgs.Empty);
             }
             catch (Exception)
             {
                 MessageBox.Show("Username Already Exists.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
+        protected virtual void OnUserAdded(EventArgs e)
+        {
+            UserAdded?.Invoke(this, e);
+        }
         private void btnReset_Click(object sender, EventArgs e)
         {
             ClearAll();

@@ -99,6 +99,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="IMedicineState.cs" />
+    <Compile Include="IObserver.cs" />
     <Compile Include="MedicineCaretaker.cs" />
     <Compile Include="MedicineMomento.cs" />
     <Compile Include="MedicineOriginator.cs" />
@@ -147,6 +148,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Singleton.cs" />
+    <Compile Include="Subject.cs" />
     <Compile Include="ValidMedicineState.cs" />
     <EmbeddedResource Include="Administrator UC\UC_AddUser.resx">
       <DependentUpon>UC_AddUser.cs</DependentUpon>

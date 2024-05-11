@@ -8,7 +8,6 @@ namespace PharmacyManagementProject.Pharmacist_UC
     public partial class UC_P_MedicineValidityCheck : UserControl
     {
         Singleton singleton = Singleton.Instance; // Accessing the Singleton instance
-        string query;
         IMedicineState currentState;
 
         public UC_P_MedicineValidityCheck()
