@@ -85,6 +85,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.LightSkyBlue;
             this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.txtUsername);
             this.panel2.Location = new System.Drawing.Point(704, 170);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(450, 500);
@@ -149,7 +150,7 @@
             this.txtUsername.ForeColor = System.Drawing.Color.Black;
             this.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtUsername.IconRightSize = new System.Drawing.Size(0, 0);
-            this.txtUsername.Location = new System.Drawing.Point(740, 321);
+            this.txtUsername.Location = new System.Drawing.Point(35, 145);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.PasswordChar = '\0';
@@ -233,7 +234,6 @@
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnSignIn);
             this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox2);

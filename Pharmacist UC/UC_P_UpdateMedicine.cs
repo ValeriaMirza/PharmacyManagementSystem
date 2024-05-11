@@ -12,8 +12,9 @@ namespace PharmacyManagementProject.Pharmacist_UC
 {
     public partial class UC_P_UpdateMedicine : UserControl
     {
-        function fn = new function();
-        String  query;
+        Singleton singleton = Singleton.Instance;
+        String query;
+
         public UC_P_UpdateMedicine()
         {
             InitializeComponent();
@@ -21,11 +22,11 @@ namespace PharmacyManagementProject.Pharmacist_UC
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            if(txtMedID.Text!="")
+            if (txtMedID.Text != "")
             {
-                query = "select * from medicine where mid = '"+txtMedID.Text+"' ";
-                DataSet ds = fn.getData(query);
-                if (ds.Tables[0].Rows.Count!=0)
+                query = "select * from medicine where mid = '" + txtMedID.Text + "' ";
+                DataSet ds = singleton.GetData(query);
+                if (ds.Tables[0].Rows.Count != 0)
                 {
                     txtMedName.Text = ds.Tables[0].Rows[0][2].ToString();
                     txtMedNumber.Text = ds.Tables[0].Rows[0][3].ToString();
@@ -36,7 +37,7 @@ namespace PharmacyManagementProject.Pharmacist_UC
                 }
                 else
                 {
-                    MessageBox.Show("No medicine with ID: "+txtMedID.Text+" exists","Info", MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    MessageBox.Show("No medicine with ID: " + txtMedID.Text + " exists", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             else
@@ -44,6 +45,7 @@ namespace PharmacyManagementProject.Pharmacist_UC
                 clearAll();
             }
         }
+
         private void clearAll()
         {
             txtMedID.Clear();
@@ -53,14 +55,13 @@ namespace PharmacyManagementProject.Pharmacist_UC
             txtEDate.ResetText();
             txtAvailableQuantity.Clear();
             txtPricePerUnit.Clear();
-            if(txtAddQuantity.Text !="0")
+            if (txtAddQuantity.Text != "0")
             {
                 txtAddQuantity.Text = "0";
             }
             else
             {
                 txtAddQuantity.Text = "0";
-
             }
         }
 
@@ -68,24 +69,24 @@ namespace PharmacyManagementProject.Pharmacist_UC
         {
             clearAll();
         }
+
         Int64 totalQuantity;
+
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             String mname = txtMedName.Text;
-            String mnumber  = txtMedNumber.Text;
+            String mnumber = txtMedNumber.Text;
             String mdate = txtMDate.Text;
             String edate = txtEDate.Text;
             Int64 quantity = Int64.Parse(txtAvailableQuantity.Text);
             Int64 addQuantity = Int64.Parse(txtAddQuantity.Text);
             Int64 unitprice = Int64.Parse(txtPricePerUnit.Text);
 
-
             totalQuantity = quantity + addQuantity;
 
-            query = "update medicine set mname = '"+mname+"', mnumber = '"+mnumber+"',mDate='"+mdate+"',eDate='"+edate+"', quantity = "+totalQuantity+", perUnit = "+unitprice+" where mid = '"+txtMedID.Text+"'";
-            fn.setData(query, "Medicine Details Updated.");
-
-
+            query = "update medicine set mname = '" + mname + "', mnumber = '" + mnumber + "',mDate='" + mdate + "',eDate='" + edate + "', quantity = " + totalQuantity + ", perUnit = " + unitprice + " where mid = '" + txtMedID.Text + "'";
+            singleton.SetData(query, "Medicine Details Updated.");
         }
     }
+
 }

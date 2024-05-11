@@ -83,6 +83,7 @@
             this.userNameLabel.TabIndex = 3;
             this.userNameLabel.Text = "Username";
             this.userNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.userNameLabel.Click += new System.EventHandler(this.userNameLabel_Click);
             // 
             // txtUserRole
             // 
@@ -342,7 +343,6 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "UC_Profile";
             this.Size = new System.Drawing.Size(1109, 768);
-            this.Enter += new System.EventHandler(this.UC_Profile_Enter);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

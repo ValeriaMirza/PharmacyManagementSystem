@@ -1,19 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PharmacyManagementProject.Administrator_UC
 {
     public partial class UC_ViewUser : UserControl
     {
-
-        function fn = new function();
+        Singleton singleton = Singleton.Instance; // Accessing the Singleton instance
         string query;
         string currentUser = "";
 
@@ -21,37 +14,36 @@ namespace PharmacyManagementProject.Administrator_UC
         {
             InitializeComponent();
         }
+
         public string ID
         {
             set { currentUser = value; }
         }
 
-
         private void UC_ViewUser_Load(object sender, EventArgs e)
         {
             query = "select * from users";
-            DataSet ds = fn.getData(query);
+            DataSet ds = singleton.GetData(query); // Using the Singleton instance
             guna2DataGridView1.DataSource = ds.Tables[0];
-
         }
 
         private void txtUserName_TextChanged(object sender, EventArgs e)
         {
             query = "select * from users where username like '" + txtUserName.Text + "%'";
-            DataSet ds = fn.getData(query);
+            DataSet ds = singleton.GetData(query); // Using the Singleton instance
             guna2DataGridView1.DataSource = ds.Tables[0];
         }
+
         String userName;
+
         private void guna2DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             try
             {
                 userName = guna2DataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
-
             }
-            catch 
+            catch
             {
-
             }
         }
 
@@ -62,9 +54,8 @@ namespace PharmacyManagementProject.Administrator_UC
                 if (currentUser != userName)
                 {
                     query = "delete from users where username = '" + userName + "'";
-                    fn.setData(query, "User Record Deleted");
+                    singleton.SetData(query, "User Record Deleted"); // Using the Singleton instance
                     UC_ViewUser_Load(this, null);
-
                 }
                 else
                 {
@@ -76,7 +67,6 @@ namespace PharmacyManagementProject.Administrator_UC
         private void btnSync_Click(object sender, EventArgs e)
         {
             UC_ViewUser_Load(this, null);
-
         }
     }
 }

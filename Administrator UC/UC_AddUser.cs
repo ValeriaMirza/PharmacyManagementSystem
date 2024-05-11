@@ -12,8 +12,9 @@ namespace PharmacyManagementProject.Administrator_UC
 {
     public partial class UC_AddUser : UserControl
     {
-        function fn = new function();
+        Singleton singleton = Singleton.Instance; // Accessing the Singleton instance
         string query;
+
         public UC_AddUser()
         {
             InitializeComponent();
@@ -31,12 +32,12 @@ namespace PharmacyManagementProject.Administrator_UC
 
             try
             {
-                query = "insert into users (userRole, name, dob, mobile, email, username, pass) values ('"+role+"', '"+name+ "','"+dob+"', " + mobile+",'"+email+ "','"+username+ "','"+pass+"')";
-                fn.setData(query, "Sign Up Succesful!");
+                query = "insert into users (userRole, name, dob, mobile, email, username, pass) values ('" + role + "', '" + name + "','" + dob + "', " + mobile + ",'" + email + "','" + username + "','" + pass + "')";
+                singleton.SetData(query, "Sign Up Successful!"); // Using the Singleton instance
             }
-            catch(Exception)
+            catch (Exception)
             {
-                MessageBox.Show("Username Already Exists.","Error", MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("Username Already Exists.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -44,6 +45,7 @@ namespace PharmacyManagementProject.Administrator_UC
         {
             ClearAll();
         }
+
         public void ClearAll()
         {
             txtUserRole.SelectedIndex = -1;
@@ -53,7 +55,7 @@ namespace PharmacyManagementProject.Administrator_UC
             txtEmail.Clear();
             txtUsername.Clear();
             txtPassword.Clear();
-
         }
     }
+
 }

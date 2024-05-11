@@ -1,21 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PharmacyManagementProject.Pharmacist_UC
 {
     public partial class UC_P_Dashboard : UserControl
     {
-        function fn = new function();
-        String query;
+        Singleton singleton = Singleton.Instance; // Accessing the Singleton instance
+        string query;
         DataSet ds;
         Int64 count;
+
         public UC_P_Dashboard()
         {
             InitializeComponent();
@@ -23,17 +18,18 @@ namespace PharmacyManagementProject.Pharmacist_UC
 
         private void UC_P_Dashboard_Load(object sender, EventArgs e)
         {
-            loadChart();
+            LoadChart();
         }
-        public void loadChart()
+
+        public void LoadChart()
         {
             query = "select count(mname) from medicine where eDate >= getdate()";
-            ds = fn.getData(query);
+            ds = singleton.GetData(query); // Using the Singleton instance
             count = Int64.Parse(ds.Tables[0].Rows[0][0].ToString());
-            this.chart1.Series["Valid Medicines"].Points.AddXY("Medicine Validity Chart",count);
+            this.chart1.Series["Valid Medicines"].Points.AddXY("Medicine Validity Chart", count);
 
             query = "select count(mname) from medicine where eDate <= getdate()";
-            ds = fn.getData(query);
+            ds = singleton.GetData(query); // Using the Singleton instance
             count = Int64.Parse(ds.Tables[0].Rows[0][0].ToString());
             this.chart1.Series["Expired Medicines"].Points.AddXY("Medicine Validity Chart", count);
         }
@@ -42,7 +38,7 @@ namespace PharmacyManagementProject.Pharmacist_UC
         {
             chart1.Series["Valid Medicines"].Points.Clear();
             chart1.Series["Expired Medicines"].Points.Clear();
-            loadChart();
+            LoadChart();
         }
     }
 }

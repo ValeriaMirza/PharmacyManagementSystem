@@ -12,7 +12,7 @@ namespace PharmacyManagementProject
 {
     public partial class Form1 : Form
     {
-        function fn = new function();
+        Singleton singleton = Singleton.Instance;
         string query;
         DataSet ds;
         public Form1()
@@ -30,7 +30,7 @@ namespace PharmacyManagementProject
         private void btnSignIn_Click(object sender, EventArgs e)
         {
             query = "select * from users";
-            ds = fn.getData(query);
+            ds = singleton.GetData(query);
 
             if (ds.Tables[0].Rows.Count == 0)
             {
@@ -44,7 +44,7 @@ namespace PharmacyManagementProject
             else
             {
                 query = "select * from users where username ='" + txtUsername.Text + "' and pass = '" + txtPassword.Text + "'";
-                ds = fn.getData(query);
+                ds = singleton.GetData(query);
                 if (ds.Tables[0].Rows.Count != 0)
                 {
                     String role = ds.Tables[0].Rows[0][1].ToString();

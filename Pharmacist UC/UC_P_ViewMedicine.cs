@@ -12,7 +12,7 @@ namespace PharmacyManagementProject.Pharmacist_UC
 {
     public partial class UC_P_ViewMedicine : UserControl
     {
-        function fn = new function();
+        Singleton singleton = Singleton.Instance;
         String query;
         public UC_P_ViewMedicine()
         {
@@ -27,19 +27,19 @@ namespace PharmacyManagementProject.Pharmacist_UC
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
-            query = "select * from medicine where mname like '"+txtSearch.Text+"%'";
+            query = "select * from medicine where mname like '" + txtSearch.Text + "%'";
             setDataGridView(query);
         }
 
         private void setDataGridView(String query)
         {
-            DataSet ds = fn.getData(query);
+            DataSet ds = singleton.GetData(query);
             guna2DataGridView1.DataSource = ds.Tables[0];
         }
         string medicineId;
         private void guna2DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            try 
+            try
             {
                 medicineId = guna2DataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
 
@@ -52,11 +52,11 @@ namespace PharmacyManagementProject.Pharmacist_UC
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Are you sure?","Delete Confirmation!", MessageBoxButtons.YesNo,MessageBoxIcon.Warning)==DialogResult.Yes)
+            if (MessageBox.Show("Are you sure?", "Delete Confirmation!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
-                query = "delete from medicine where mid = '"+medicineId+"'";
-                fn.setData(query, "Medicine Record Deleted!");
-                UC_P_ViewMedicine_Load(this,null);
+                query = "delete from medicine where mid = '" + medicineId + "'";
+                singleton.SetData(query, "Medicine Record Deleted!");
+                UC_P_ViewMedicine_Load(this, null);
             }
 
         }
@@ -66,4 +66,5 @@ namespace PharmacyManagementProject.Pharmacist_UC
             UC_P_ViewMedicine_Load(this, null);
         }
     }
+
 }

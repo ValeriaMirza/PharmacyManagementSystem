@@ -1,19 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PharmacyManagementProject.Pharmacist_UC
 {
     public partial class UC_P_AddMedicine : UserControl
     {
-        function fn = new function();
-        String query;
+        Singleton singleton = Singleton.Instance; // Accessing the Singleton instance
+        string query;
+
         public UC_P_AddMedicine()
         {
             InitializeComponent();
@@ -21,7 +15,7 @@ namespace PharmacyManagementProject.Pharmacist_UC
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            if(txtMedID.Text!="" && txtMedName.Text != "" && txtMedNumber.Text != "" && txtPricePerUnit.Text != "" && txtQuantity.Text != "")
+            if (txtMedID.Text != "" && txtMedName.Text != "" && txtMedNumber.Text != "" && txtPricePerUnit.Text != "" && txtQuantity.Text != "")
             {
                 String mid = txtMedID.Text;
                 String mname = txtMedName.Text;
@@ -31,8 +25,8 @@ namespace PharmacyManagementProject.Pharmacist_UC
                 Int64 perunit = Int64.Parse(txtPricePerUnit.Text);
                 Int64 quantity = Int64.Parse(txtQuantity.Text);
 
-                query = "insert into medicine( mid , mname, mnumber , mDate , eDate , quantity, perUnit) values ('"+mid+"', '"+mname+"', '"+mnumber+"', '"+mdate+"', '"+edate+"', "+quantity+", '"+perunit+"')";
-                fn.setData(query, "Medicine added into the database.");
+                query = "insert into medicine( mid , mname, mnumber , mDate , eDate , quantity, perUnit) values ('" + mid + "', '" + mname + "', '" + mnumber + "', '" + mdate + "', '" + edate + "', " + quantity + ", '" + perunit + "')";
+                singleton.SetData(query, "Medicine added into the database."); // Using the Singleton instance
                 ClearAll();
 
             }
@@ -46,6 +40,7 @@ namespace PharmacyManagementProject.Pharmacist_UC
         {
             ClearAll();
         }
+
         public void ClearAll()
         {
             txtMedID.Clear();
@@ -55,7 +50,6 @@ namespace PharmacyManagementProject.Pharmacist_UC
             txtPricePerUnit.Clear();
             txtManufacturingDate.ResetText();
             txtExpireDate.ResetText();
-
         }
     }
 }

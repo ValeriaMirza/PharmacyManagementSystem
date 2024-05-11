@@ -13,7 +13,7 @@ namespace PharmacyManagementProject.Pharmacist_UC
 {
     public partial class UC_P_SellMedicine : UserControl
     {
-        function fn = new function();
+        Singleton singleton = Singleton.Instance;
         String query;
         DataSet ds;
         public UC_P_SellMedicine()
@@ -25,9 +25,9 @@ namespace PharmacyManagementProject.Pharmacist_UC
         {
             listBoxMedicines.Items.Clear();
             query = "select mname from medicine where eDate >= getdate() and quantity>'0'";
-            ds = fn.getData(query);
+            ds = singleton.GetData(query);
 
-            for(int i = 0; i < ds.Tables[0].Rows.Count;i++)
+            for (int i = 0; i < ds.Tables[0].Rows.Count;i++)
             {
                 listBoxMedicines.Items.Add(ds.Tables[0].Rows[i][0].ToString());
             }
@@ -42,9 +42,9 @@ namespace PharmacyManagementProject.Pharmacist_UC
         {
             listBoxMedicines.Items.Clear();
             query = "select mname from medicine where mname like '"+txtSearch.Text+"%' and eDate >= getdate() and quantity > '0'";
-            ds = fn.getData(query);
+            ds = singleton.GetData(query);
 
-            for(int i = 0; i < ds.Tables[0].Rows.Count; i++)
+            for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
             {
                 listBoxMedicines.Items.Add(ds.Tables[0].Rows[i][0].ToString());
             }
@@ -56,7 +56,7 @@ namespace PharmacyManagementProject.Pharmacist_UC
             String name = listBoxMedicines.GetItemText(listBoxMedicines.SelectedItem);
             txtMedName.Text = name;
             query = "select mid, eDate,perUnit from medicine where mname = '"+name+"'";
-            ds = fn.getData(query);
+            ds = singleton.GetData(query);
             txtMedID.Text = ds.Tables[0].Rows[0][0].ToString();
             txtExpireDate.Text = ds.Tables[0].Rows[0][1].ToString();
             txtPricePerUnit.Text = ds.Tables[0].Rows[0][2].ToString();
@@ -86,7 +86,7 @@ namespace PharmacyManagementProject.Pharmacist_UC
             if (txtMedID.Text != "")
             {
                 query = "select quantity from medicine where mid = '" + txtMedID.Text + "'";
-                ds = fn.getData(query);
+                ds = singleton.GetData(query);
 
                 quantity = Int64.Parse(ds.Tables[0].Rows[0][0].ToString());
                 newQuantity = quantity - Int64.Parse(txtNoOfUnits.Text);
@@ -105,7 +105,7 @@ namespace PharmacyManagementProject.Pharmacist_UC
                     totalLabel.Text = "MDL: " + totalAmount.ToString();
 
                     query = "update medicine set quantity = '"+newQuantity+"' where mid = '"+txtMedID.Text+"'";
-                    fn.setData(query,"Medicine Added");
+                    singleton.SetData(query, "Medicine Added");
                 }
                 else
                 {
@@ -178,11 +178,11 @@ namespace PharmacyManagementProject.Pharmacist_UC
                 finally
                 {
                     query  ="select quantity from medicine where mid ='"+valueId+"'";
-                    ds = fn.getData(query);
+                    ds = singleton.GetData(query);
                     quantity = Int64.Parse(ds.Tables[0].Rows[0][0].ToString());
                     newQuantity = quantity + noOfUnit;
                     query = "update medicine set quantity = '"+newQuantity+"' where mid = '"+valueId+"'";
-                    fn.setData(query, "Medicine removed from cart!");
+                    singleton.SetData(query, "Medicine removed from cart!");
                     totalAmount = totalAmount - valueAmount;
                     totalLabel.Text = "MDL:" + totalAmount.ToString();
 

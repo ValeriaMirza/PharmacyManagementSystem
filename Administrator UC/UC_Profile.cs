@@ -1,19 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PharmacyManagementProject.Administrator_UC
 {
     public partial class UC_Profile : UserControl
     {
-        function fn = new function();
-        String query;
+        Singleton singleton = Singleton.Instance; // Accessing the Singleton instance
+        string query;
+
         public UC_Profile()
         {
             InitializeComponent();
@@ -23,6 +18,7 @@ namespace PharmacyManagementProject.Administrator_UC
         {
             set { userNameLabel.Text = value; }
         }
+
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             String role = txtUserRole.Text;
@@ -33,29 +29,25 @@ namespace PharmacyManagementProject.Administrator_UC
             String username = userNameLabel.Text;
             String pass = txtPassword.Text;
 
-            query = "update users set userRole = '" + role + "',name =  '" + name + "',dob='" + dob + "', mobile=" + mobile + ",email = '" + email + "',pass = '" + pass + "' where username = '"+username+"'";
-            fn.setData(query, "Update succesful!");
-
-
+            query = "update users set userRole = '" + role + "',name =  '" + name + "',dob='" + dob + "', mobile=" + mobile + ",email = '" + email + "',pass = '" + pass + "' where username = '" + username + "'";
+            singleton.SetData(query, "Update successful!"); // Using the Singleton instance
         }
 
-        private void UC_Profile_Enter(object sender, EventArgs e)
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            userNameLabel_Click(this, null);
+        }
+
+        private void userNameLabel_Click(object sender, EventArgs e)
         {
             query = "select * from users where username ='" + userNameLabel.Text + "'";
-            DataSet ds = fn.getData(query);
+            DataSet ds = singleton.GetData(query); // Using the Singleton instance
             txtUserRole.Text = ds.Tables[0].Rows[0][1].ToString();
             txtName.Text = ds.Tables[0].Rows[0][2].ToString();
             txtDob.Text = ds.Tables[0].Rows[0][3].ToString();
             txtMobile.Text = ds.Tables[0].Rows[0][4].ToString();
             txtEmail.Text = ds.Tables[0].Rows[0][5].ToString();
             txtPassword.Text = ds.Tables[0].Rows[0][6].ToString();
-
-        }
-
-
-        private void btnReset_Click(object sender, EventArgs e)
-        {
-            UC_Profile_Enter(this, null);
         }
     }
 }
