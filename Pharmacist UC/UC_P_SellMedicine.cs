@@ -16,6 +16,8 @@ namespace PharmacyManagementProject.Pharmacist_UC
         Singleton singleton = Singleton.Instance;
         String query;
         DataSet ds;
+        private MedicineOriginator originator = new MedicineOriginator();
+        private MedicineCaretaker caretaker = new MedicineCaretaker();
         public UC_P_SellMedicine()
         {
             InitializeComponent();
@@ -79,12 +81,15 @@ namespace PharmacyManagementProject.Pharmacist_UC
         protected int n, totalAmount = 0;
         protected Int64 quantity, newQuantity;
 
-        
+
 
         private void btnAddToCart_Click(object sender, EventArgs e)
         {
             if (txtMedID.Text != "")
             {
+                // Save the current state of the medicine before adding it to the cart
+                MedicineMemento memento = new MedicineMemento(txtMedID.Text, quantity);
+
                 query = "select quantity from medicine where mid = '" + txtMedID.Text + "'";
                 ds = singleton.GetData(query);
 
@@ -104,23 +109,28 @@ namespace PharmacyManagementProject.Pharmacist_UC
                     totalAmount = totalAmount + int.Parse(txtTotalPrice.Text);
                     totalLabel.Text = "MDL: " + totalAmount.ToString();
 
-                    query = "update medicine set quantity = '"+newQuantity+"' where mid = '"+txtMedID.Text+"'";
+                    query = "update medicine set quantity = '" + newQuantity + "' where mid = '" + txtMedID.Text + "'";
                     singleton.SetData(query, "Medicine Added");
+
+                    // The medicine was successfully added to the cart
+                    // Clear all text boxes and reload medicine list
+                    ClearAll();
+                    UC_P_SellMedicine_Load(this, null);
                 }
                 else
                 {
                     MessageBox.Show("Medicine is out of stock.\n Only '" + quantity + "' units left ", "Warning!!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                    // If adding was not successful, restore the state of the medicine
+                    originator.Restore(memento);
                 }
-                ClearAll();
-                UC_P_SellMedicine_Load(this, null);
             }
             else
             {
-                MessageBox.Show("Select Medicine First", "Information",MessageBoxButtons.OK,MessageBoxIcon.Information);
-
-            }         
-
+                MessageBox.Show("Select Medicine First", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
+
         int valueAmount;
         String valueId;
         protected Int64 noOfUnit;
@@ -159,6 +169,11 @@ namespace PharmacyManagementProject.Pharmacist_UC
             totalAmount = 0;
             totalLabel.Text = "MDL: 00";
             guna2DataGridView1.DataSource = 0;
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void btnRemove_Click(object sender, EventArgs e)

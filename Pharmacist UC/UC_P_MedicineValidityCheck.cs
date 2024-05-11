@@ -9,34 +9,38 @@ namespace PharmacyManagementProject.Pharmacist_UC
     {
         Singleton singleton = Singleton.Instance; // Accessing the Singleton instance
         string query;
+        IMedicineState currentState;
 
         public UC_P_MedicineValidityCheck()
         {
             InitializeComponent();
+            currentState = new ValidState();
         }
 
         private void txtCheck_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (txtCheck.SelectedIndex == 0)
             {
-                query = "select * from medicine where eDate >= getdate()";
-                SetDataGridView(query, "Valid medicines.", Color.Green);
+                currentState = new ValidState();
             }
             else if (txtCheck.SelectedIndex == 1)
             {
-                query = "select * from medicine where eDate <= getdate()";
-                SetDataGridView(query, "Expired medicines.", Color.Red);
-
+                currentState = new ExpiredState();
             }
             else if (txtCheck.SelectedIndex == 2)
             {
-                query = "select * from medicine";
+                currentState = null; // Reset state
+                string query = "select * from medicine";
                 SetDataGridView(query, "All Medicines.", Color.Black);
+            }
 
+            if (currentState != null)
+            {
+                currentState.HandleState(this);
             }
         }
 
-        private void SetDataGridView(string query, string labelName, Color col)
+        public void SetDataGridView(string query, string labelName, Color col)
         {
             DataSet ds = singleton.GetData(query); // Using the Singleton instance
             guna2DataGridView1.DataSource = ds.Tables[0];
